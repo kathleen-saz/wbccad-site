@@ -1,41 +1,42 @@
 ---
 version: alpha
-name: "WBCcad Precision Grid"
-description: "A high-contrast industrial interface that turns the visual language of CAD drawings into an assured Brazilian B2B software brand."
+name: "WBCcad Geist Precision Grid"
+description: "A Geist-led, high-contrast system that turns CAD guides, model space and revision data into a precise Brazilian B2B software brand."
 colors:
-  primary: "#2F5CFF"
-  ink: "#0A0A0A"
-  paper: "#F5F5F3"
+  primary: "#0070F3"
+  ink: "#000000"
+  paper: "#FFFFFF"
   white: "#FFFFFF"
-  muted: "#6B6B68"
-  line: "#D8D8D4"
-  blueprint: "#2F5CFF"
-  blueprint-dark: "#1736A7"
+  surface: "#FAFAFA"
+  muted: "#666666"
+  line: "#EAEAEA"
+  blueprint: "#0070F3"
+  blueprint-dark: "#0055B8"
   focus: "#FF6B2C"
 typography:
   sans:
-    fontFamily: "Sora, Helvetica Neue, Arial, sans-serif"
+    fontFamily: "Geist Sans, Helvetica Neue, Arial, sans-serif"
     lineHeight: "1.5"
   mono:
-    fontFamily: "IBM Plex Mono, SFMono-Regular, Consolas, monospace"
+    fontFamily: "Geist Mono, SFMono-Regular, Consolas, monospace"
     lineHeight: "1.4"
 rounded:
-  DEFAULT: "0px"
-  sm: "0px"
-  md: "0px"
-  lg: "0px"
+  DEFAULT: "8px"
+  sm: "6px"
+  md: "8px"
+  lg: "12px"
 spacing:
   section-gap: "10rem"
-  page-max: "90rem"
+  page-max: "75rem"
 components:
   button:
-    backgroundColor: "#2F5CFF"
+    backgroundColor: "#000000"
     textColor: "#FFFFFF"
-    rounded: "0px"
-    height: "52px"
+    rounded: "8px"
+    height: "48px"
   card:
     backgroundColor: "#FFFFFF"
-    textColor: "#0A0A0A"
+    textColor: "#000000"
     rounded: "0px"
   focus:
     backgroundColor: "#FF6B2C"
@@ -43,13 +44,13 @@ components:
     width: "3px"
 ---
 
-# WBCcad Precision Grid Design System
+# WBCcad Geist Precision Grid Design System
 
 ## Overview
 
 ### Creative North Star
 
-The site should feel like an expert project file opened in a calm, exacting design studio: black model space, luminous blueprint selection color, technical annotations, and a grid that always carries real information. The expression is assured rather than futuristic.
+The site should feel like a precise Geist interface built around a real engineering project: a white system canvas, black model space, blue CAD selection, technical annotations, and grid guides that always carry information. The expression is calm and direct rather than futuristic.
 
 ### Product context and register
 
@@ -58,22 +59,22 @@ The site should feel like an expert project file opened in a calm, exacting desi
 - **Locale(s) and language policy:** `pt-BR`. Product and industry terms retain established forms such as CAD, DWG and ERP.
 - **Usage scene:** Primarily desktop research by B2B buyers, with complete mobile browsing for shared links and colleague review.
 - **Register:** Brand marketing.
-- **Memorable signature:** A living CAD viewport in the hero that makes the product category immediately tangible.
+- **Memorable signature:** A dark CAD viewport inside the otherwise grayscale Geist system, with blue reserved for selected geometry.
 - **Restraint:** The viewport carries the technical theatre; content sections use disciplined typography, rules and whitespace.
 - **Anti-references:** Generic purple-gradient SaaS landing pages, neon cyberpunk, rounded card mosaics, stock-photo engineering teams, and ungrounded AI claims.
 - **Token ownership/runtime mapping:** This file is the durable rationale; exact runtime tokens live in `app/globals.css` under `:root` with matching names and values.
 
 ## Colors
 
-`ink` and `paper` create the high-contrast base. `blueprint` is the single expressive brand color, used for active geometry, primary CTAs and large brand fields. `focus` is reserved for focus-visible rings so accessibility remains clear and distinct from the brand accent. `muted` and `line` support technical annotation without competing with the message.
+`ink` and `paper` create the high-contrast base. `surface` and `line` separate grid cells without relying on shadow. `blueprint` is the only expressive color and belongs to CAD selection, active geometry and technical focus—not large marketing fields. `focus` stays distinct for keyboard focus.
 
 ## Typography
 
-Sora carries headlines and body copy with compact technical geometry. IBM Plex Mono is reserved for file names, labels, dimensions, indexes and system-state annotations. Headlines use tight tracking and controlled short lines; paragraphs stay below roughly 68 characters. Sentence case is preferred over decorative all-caps, except small technical labels.
+Geist Sans carries navigation, headlines, body copy and actions. Geist Mono is reserved for file names, labels, dimensions, indexes and system-state annotations. Headlines use restrained weight and tight tracking; paragraphs stay below roughly 68 characters. Sentence case is preferred over decorative all-caps, except small technical labels.
 
 ## Layout
 
-The desktop shell tops out at 90rem and uses edge-to-edge section fields within a 64px viewport margin. Major sections use asymmetric two-column grids, while content-rich sequences use literal rules and aligned baselines. At 760px, every sequence becomes one column and sticky positioning is removed. Media geometry is reserved so no loading shift is introduced.
+The desktop shell tops out at 75rem and uses edge-to-edge section fields within a 64px viewport margin. Major sections use asymmetric two-column grids, while content-rich sequences use literal rules and aligned baselines. At 760px, every sequence becomes one column and sticky positioning is removed. Media geometry is reserved so no loading shift is introduced.
 
 ## Elevation & Depth
 
@@ -81,7 +82,7 @@ Hierarchy comes from color fields, borders and overlap, not soft card shadows. T
 
 ## Shapes
 
-Corners are square throughout to echo drafting sheets, panels and model-space tools. Small circular shapes are allowed only for diagram nodes and check indicators. Borders are crisp one-pixel rules; selected geometry may use two pixels.
+Marketing grid cells remain square so their guides align. Resting interface surfaces use 8–12px radii following Geist material roles: 8px controls, 12px application and CTA surfaces. Circular shapes are reserved for diagram nodes and check indicators.
 
 ## Components
 
@@ -91,7 +92,7 @@ Links and controls receive visible hover movement or underline, orange focus-vis
 
 ### Buttons and actions
 
-Primary actions use the blueprint field with white text. The inverse CTA uses white on blueprint and inverts to ink on hover. Buttons are 52px tall, square, and paired with a directional arrow. Text links use a precise underline reveal.
+Primary actions use ink with white text. Buttons are 48px tall, 8px rounded, and paired with a directional arrow. Blueprint blue does not compete with the primary action. Text links use a precise underline reveal.
 
 ### Navigation and data display
 
@@ -111,11 +112,11 @@ Motion is mechanical and slow: the selected CAD label drifts, the materials tick
 
 ### Content and data visualization
 
-The voice is direct, technically grounded and outcome-oriented. It avoids inflated transformation language. Numbers and dimensions use the mono face. Diagrams are conceptual and are labelled as visual interface elements rather than evidence of a live product session.
+The voice sounds like someone who has sat between commercial, engineering and production teams. It names the actual object and consequence: measure, layout, list, quote, catalog, factory. It avoids transformation language, fake quotations and generic claims. Numbers and dimensions use the mono face.
 
 ## Do's and Don'ts
 
 - **Do:** Make every structural line or index communicate hierarchy, workflow or technical context.
 - **Do:** Keep the CAD viewport as the one expressive, product-specific moment.
-- **Don't:** add gradients, glass cards, excessive pills or decorative glow fields.
+- **Don't:** add decorative gradients, glass cards, excessive pills or glow fields.
 - **Don't:** use unsupported absolute claims or imply that a conceptual UI image is a live product screenshot.

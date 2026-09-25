@@ -1,45 +1,33 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Sora } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-
-const sora = Sora({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wbccad.com"),
-  title: "WBCcad — Projetos, orçamentos e produção em um só fluxo",
+  title: "WBCcad — Projete, orce e produza sem refazer o trabalho",
   description:
-    "Software CAD especializado para layouts comerciais, refrigeração, armazenagem e mobiliário — do projeto executivo à lista de materiais.",
+    "Software CAD especializado que mantém layout, lista de materiais, orçamento e documentação no mesmo projeto.",
   openGraph: {
-    title: "WBCcad — Do layout ao orçamento, sem perder um parafuso",
+    title: "WBCcad — Projete, orce e produza",
     description:
-      "Automatize layouts, cálculos, listas de materiais e propostas com uma plataforma configurada para o seu produto.",
+      "Mude o layout e mantenha materiais, custos e documentação no mesmo projeto.",
     type: "website",
     locale: "pt_BR",
     siteName: "WBCcad",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WBCcad — Projetos e orçamentos em um só fluxo",
-    description: "CAD especializado para transformar layouts em entregas precisas.",
+    title: "WBCcad — Projete, orce e produza",
+    description: "CAD especializado para manter projeto, materiais e orçamento juntos.",
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${sora.variable} ${plexMono.variable}`}>
+    <html lang="pt-BR" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={GeistSans.className}>
         {children}
         <Analytics />
       </body>

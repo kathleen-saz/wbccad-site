@@ -8,6 +8,9 @@
 # production
 /build
 
+# local verification artifacts
+/work/
+
 # local env files
 .env*
 

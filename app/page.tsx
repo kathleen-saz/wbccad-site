@@ -40,10 +40,10 @@ const modules = [
 ];
 
 const outcomes = [
-  "Menos retrabalho entre projeto e orçamento",
-  "Listas de materiais geradas a partir do layout",
-  "Regras do seu produto incorporadas ao fluxo",
-  "Integração com ERP, bases de dados e serviços",
+  "Uma alteração de medida não vira uma nova planilha",
+  "O orçamento nasce do que foi desenhado",
+  "Compras recebe a lista do projeto aprovado",
+  "O ERP recebe dados, não retrabalho",
 ];
 
 export default function Home() {
@@ -54,67 +54,67 @@ export default function Home() {
           <Wordmark />
         </a>
         <nav className="desktop-nav" aria-label="Navegação principal">
-          <a href="#plataforma">Plataforma</a>
-          <a href="#modulos">Módulos</a>
-          <a href="#metodo">Como funciona</a>
-          <a href="#empresa">Empresa</a>
+          <a href="#plataforma">Produto</a>
+          <a href="#modulos">Aplicações</a>
+          <a href="#metodo">Fluxo</a>
+          <a href="#empresa">Quem faz</a>
         </nav>
         <a className="header-cta" href="https://wbccad.com/about-us" target="_blank" rel="noreferrer">
-          Fale conosco <ArrowIcon />
+          Agendar demo <ArrowIcon />
         </a>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>CAD especializado</span> / projetos comerciais</p>
+          <p className="eyebrow"><span>CAD especializado</span> / projeto, orçamento e produção</p>
           <h1>
-            Do layout ao orçamento.
-            <span>Sem perder um parafuso.</span>
+            Projete. Orce. Produza.
+            <span>Sem refazer o trabalho.</span>
           </h1>
           <p className="hero-lede">
-            O WBCcad transforma projetos complexos em um fluxo preciso: desenhe, configure, calcule e entregue — com as regras do seu produto dentro do sistema.
+            Você muda uma medida no layout. O WBCcad atualiza materiais, custos e documentação — sem manter o mesmo projeto em três lugares diferentes.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="https://wbccad.com/about-us" target="_blank" rel="noreferrer">
-              Agendar uma conversa <ArrowIcon />
+              Ver o WBCcad em ação <ArrowIcon />
             </a>
-            <a className="text-link" href="#plataforma">Conhecer a plataforma <span aria-hidden="true">↓</span></a>
+            <a className="text-link" href="#modulos">Explorar os módulos <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div className="hero-visual" aria-label="Visualização conceitual de um projeto técnico no WBCcad">
           <CadViewport />
         </div>
         <div className="hero-proof" aria-label="Informações sobre a empresa">
-          <div><strong>1994</strong><span>fundação da Workbench</span></div>
-          <div><strong>6+</strong><span>frentes especializadas</span></div>
-          <div><strong>1 fluxo</strong><span>do CAD à produção</span></div>
+          <div><strong>Desde 1994</strong><span>desenvolvido pela Workbench</span></div>
+          <div><strong>6 módulos</strong><span>que podem trabalhar juntos</span></div>
+          <div><strong>1 projeto</strong><span>para desenho, materiais e proposta</span></div>
         </div>
       </section>
 
       <section className="marquee" aria-label="Recursos principais">
         <div className="marquee-track">
-          <span>DWG compatível</span><i />
+          <span>Desenho técnico</span><i />
           <span>Lista de materiais</span><i />
-          <span>Orçamento integrado</span><i />
-          <span>Regras de engenharia</span><i />
-          <span>Integração ERP</span><i />
-          <span>DWG compatível</span><i />
+          <span>Orçamento do projeto</span><i />
+          <span>Regras do seu produto</span><i />
+          <span>Dados para o ERP</span><i />
+          <span>Desenho técnico</span><i />
           <span>Lista de materiais</span><i />
-          <span>Orçamento integrado</span><i />
+          <span>Orçamento do projeto</span><i />
         </div>
       </section>
 
       <section className="platform section-shell" id="plataforma">
         <div className="section-heading">
-          <p className="eyebrow">Um sistema, todo o processo</p>
-          <h2>Precisão que começa no projeto e chega ao chão de fábrica.</h2>
+          <p className="eyebrow">Uma fonte para o projeto</p>
+          <h2>O projeto mudou? O orçamento muda junto.</h2>
         </div>
         <div className="platform-grid">
           <article className="feature-card feature-card-wide">
             <div className="card-copy">
               <span className="card-index">A / 01</span>
-              <h3>Edite o projeto. O restante acompanha.</h3>
-              <p>Altere medidas, acabamentos ou conjuntos e mantenha documentação, materiais e orçamento alinhados à nova configuração.</p>
+              <h3>Troque uma medida sem refazer três arquivos.</h3>
+              <p>Medidas, acabamentos e conjuntos ficam ligados ao projeto. Quando algo muda, materiais e orçamento acompanham a revisão.</p>
             </div>
             <div className="change-visual" aria-hidden="true">
               <div className="change-before"><span>REV. 03</span><b>4,20 m</b></div>
@@ -125,23 +125,23 @@ export default function Home() {
           <article className="feature-card feature-dark">
             <span className="card-index">A / 02</span>
             <div className="bom-icon" aria-hidden="true"><span>12</span><span>04</span><span>28</span></div>
-            <h3>Lista técnica, sem adivinhação.</h3>
-            <p>Componentes, quantidades, códigos e acabamentos saem do próprio projeto.</p>
+            <h3>Saiba o que fabricar.</h3>
+            <p>Componentes, quantidades, códigos e acabamentos saem do que foi desenhado.</p>
           </article>
           <article className="feature-card feature-accent">
             <span className="card-index">A / 03</span>
             <div className="orbit-mark" aria-hidden="true"><span /><span /><span /></div>
-            <h3>Feito para o seu produto.</h3>
-            <p>Cadastros, restrições e combinações seguem a lógica real da sua engenharia.</p>
+            <h3>Seu produto tem regras.</h3>
+            <p>O WBCcad conhece as combinações, limites e opções que sua engenharia já usa.</p>
           </article>
         </div>
       </section>
 
       <section className="modules section-shell" id="modulos">
         <div className="section-heading modules-heading">
-          <p className="eyebrow">Módulos especializados</p>
-          <h2>Uma base comum.<br />Cada operação, sua lógica.</h2>
-          <p>Combine os módulos conforme seu portfólio, seu processo comercial e a profundidade técnica de cada entrega.</p>
+          <p className="eyebrow">Aplicações</p>
+          <h2>Escolha só o que sua operação precisa.</h2>
+          <p>Os módulos compartilham a mesma base de projeto. Você combina as partes que fazem sentido para o seu catálogo e para a sua entrega.</p>
         </div>
         <div className="module-list">
           {modules.map((module) => (
@@ -158,32 +158,32 @@ export default function Home() {
 
       <section className="workflow" id="metodo">
         <div className="workflow-intro section-shell">
-          <p className="eyebrow eyebrow-light">Da ideia à entrega</p>
-          <h2>Um fluxo contínuo,<br />sem versões paralelas.</h2>
+          <p className="eyebrow eyebrow-light">Do primeiro traço à entrega</p>
+          <h2>Desenhe uma vez.<br />Use a informação até o fim.</h2>
         </div>
         <div className="workflow-steps section-shell">
           <article>
             <span>01 / Projetar</span>
-            <h3>Monte o layout com blocos inteligentes.</h3>
-            <p>Arraste, posicione e configure itens com as medidas e regras permitidas para cada linha.</p>
+            <h3>Monte o layout com o seu catálogo.</h3>
+            <p>Posicione equipamentos e módulos já configurados com as medidas e opções que você vende.</p>
           </article>
           <article>
             <span>02 / Validar</span>
-            <h3>Deixe o sistema cuidar das dependências.</h3>
-            <p>Restrições de engenharia reduzem combinações inválidas e conferências manuais.</p>
+            <h3>O sistema confere as combinações.</h3>
+            <p>As regras cadastradas avisam quando uma escolha não fecha antes que ela chegue ao orçamento.</p>
           </article>
           <article>
             <span>03 / Entregar</span>
-            <h3>Gere proposta, materiais e documentação.</h3>
-            <p>Compartilhe uma entrega coerente com comercial, compras, produção e cliente.</p>
+            <h3>Entregue a informação para cada equipe.</h3>
+            <p>Comercial recebe a proposta. Compras e produção recebem os itens do projeto aprovado.</p>
           </article>
         </div>
       </section>
 
       <section className="results section-shell">
         <div className="results-statement">
-          <p className="eyebrow">Menos incerteza. Mais controle.</p>
-          <blockquote>“O projeto deixa de ser um desenho isolado e passa a conduzir toda a operação.”</blockquote>
+          <p className="eyebrow">No dia a dia</p>
+          <h2>Menos ida e volta entre quem vende, quem projeta e quem fabrica.</h2>
         </div>
         <ul className="outcome-list">
           {outcomes.map((outcome) => (
@@ -198,19 +198,19 @@ export default function Home() {
         </div>
         <div className="about-copy">
           <p className="eyebrow">Workbench / São Paulo</p>
-          <h2>Três décadas traduzindo engenharia em software.</h2>
-          <p>O WBCcad é desenvolvido pela Workbench, fundada em 1994. A plataforma nasceu da combinação entre tecnologia, engenharia e operação — e evoluiu em parceria com empresas que projetam, vendem e fabricam soluções complexas.</p>
+          <h2>Feito por quem conhece o caminho entre a tela e a fábrica.</h2>
+          <p>A Workbench desenvolve o WBCcad desde 1994. O trabalho começa entendendo como cada empresa vende, projeta e fabrica — e só depois vira regra dentro do software.</p>
           <a className="text-link" href="https://wbccad.com/about-us" target="_blank" rel="noreferrer">Conheça a trajetória <ArrowIcon /></a>
         </div>
       </section>
 
       <section className="final-cta section-shell">
         <div>
-          <p className="eyebrow eyebrow-light">Seu produto. Suas regras. Um fluxo.</p>
-          <h2>Vamos projetar uma operação mais precisa?</h2>
+          <p className="eyebrow eyebrow-light">Uma demonstração com contexto</p>
+          <h2>Quer testar o WBCcad com um produto do seu catálogo?</h2>
         </div>
         <a className="button button-light" href="https://wbccad.com/about-us" target="_blank" rel="noreferrer">
-          Conversar com a WBCcad <ArrowIcon />
+          Agendar uma demonstração <ArrowIcon />
         </a>
       </section>
 
